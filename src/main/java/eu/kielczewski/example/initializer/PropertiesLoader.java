@@ -2,7 +2,6 @@ package eu.kielczewski.example.initializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.Configuration;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,7 +9,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-@Configuration
 class PropertiesLoader {
 
     private static final Logger logger = LoggerFactory.getLogger(PropertiesLoader.class);
