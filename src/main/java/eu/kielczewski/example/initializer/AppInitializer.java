@@ -33,7 +33,7 @@ public class AppInitializer implements WebApplicationInitializer {
         dispatcher.addMapping(MAPPING_URL);
     }
 
-    private AnnotationConfigWebApplicationContext getContext() {
+    private WebApplicationContext getContext() {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
         context.setConfigLocation(CONFIG_LOCATION);
         Properties prop = propertiesLoader.load(SPRING_PROPERTIES_FILE_NAME);
