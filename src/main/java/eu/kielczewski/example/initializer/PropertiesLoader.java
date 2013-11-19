@@ -13,6 +13,7 @@ class PropertiesLoader {
 
     private static final Logger logger = LoggerFactory.getLogger(PropertiesLoader.class);
 
+    @SuppressWarnings("SameParameterValue")
     public Properties load(String fileName) {
         Properties prop = new Properties();
         InputStream im = null;
