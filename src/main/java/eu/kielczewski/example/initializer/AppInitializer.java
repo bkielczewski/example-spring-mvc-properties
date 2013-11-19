@@ -1,7 +1,5 @@
 package eu.kielczewski.example.initializer;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
@@ -16,7 +14,6 @@ import java.util.Properties;
 @SuppressWarnings("UnusedDeclaration")
 public class AppInitializer implements WebApplicationInitializer {
 
-    private static final Logger logger = LoggerFactory.getLogger(WebApplicationInitializer.class);
     private static final String CONFIG_LOCATION = "eu.kielczewski.example.config";
     private static final String MAPPING_URL = "/*";
     private static final String SPRING_PROPERTIES_FILE_NAME = "spring.properties";
