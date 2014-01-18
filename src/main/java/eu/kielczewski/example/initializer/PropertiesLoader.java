@@ -36,7 +36,6 @@ class PropertiesLoader {
         InputStream im = findInWorkingDirectory(fileName);
         if (im == null) im = findInClasspath(fileName);
         if (im == null) im = findInSourceDirectory(fileName);
-        if (im == null) throw new FileNotFoundException(String.format("File %s not found", fileName));
         return im;
     }
 
